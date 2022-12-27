@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Student Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Form-std">
+            <div>
+                <h1>Student Form</h1>
+            </div>
+            <div class="middle-container">
+                <div><label>First Name</label>
+                    <input type="text" value="" name="" id="firs-name">
+                </div>
+                <div><label>last Name</label>
+                    <input type="text" id="last-name">
+                </div>
+                <div><label>Father Name</label>
+                    <input type="text" id="father-name">
+                </div>
+                <div>
+                    <label>Age
+                    </label>
+                    <input type="text" id="age">
+                </div>
+                <div><label> Image upload</label>
+                    <input type="file" id="image-upload">
+                </div>
+                <div class="sub-btn">
+                    <input type="submit" value="Submit" id="form-data" onclick=" submitform()"  onsubmit="submitform()">
+                </div>
+
+            </div>
+        </div>
+        <div class="section-b">
+            <table >
+                <thead>
+                    <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Father Name</td>
+                        <td>Age</td>
+                        <td>Image</td>
+                    </tr>
+                </thead>
+                <tbody id="datafetch">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
